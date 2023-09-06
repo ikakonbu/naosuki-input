@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=M+PLUS+Rounded+1c:wght@700&family=Zen+Maru+Gothic:wght@700&display=swap');
+body{
+    font-family: 'kiwi Maru';   
+    color: #2d1e14; 
+    margin: 0;
+    min-height: 100vw;
+    background: #fcc5d2;
+}
+
+.title-wrapper {
+    text-align: center;
+    background-image: radial-gradient(circle farthest-corner at 50% 150%, #b9d2ea 10%, #f9e2bb 25%);
+    border: solid 1px #f5e8cf;
+    margin: 0;
+}
+
+.title-wrapper h1 {
+    margin: 0;
+    padding: 30px 0;
+    font-size: min(35px, 6vw);
+}
+
+.bg-wrapper {
+    margin: 0;
+    background-image: linear-gradient(to top, #fcc5d2, #f9e2bb);
+}
+
+.bg {
+    height: min(300px,50vw);
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    background-position: center center;
+}
+
+.bg h1 {
+    height: 100%;
+}
+
+.main {
+    padding: 40px 0 ;
+    background: #fcc5d2;
+    text-align: center;
+}
+
+.keyboard {
+    border-radius: 1vw;
+    width: min(600px, 90vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button {
+    transition: ease-out 0.3s;
+    font-family: 'kiwi Maru';   
+    border: solid 1px white;
+    color: #252c3f;
+    box-shadow: 10px 10px 10px rgba(70, 16, 58, 0.11), -10px -10px 10px rgba(255,255,255, 0.2);
+}
+
+.keyboard button {
+    aspect-ratio: 1/1;
+    margin: min(10px,3vw) min(30px,3vw);
+    background: rgba(255,255,255,0.2);
+    border-radius: 20%;
+    font-size: 50px;
+
+}
+
+.keyboard2 button {
+    font-size: 30px;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.clearbtn {
+    font-size: 20px;
+    background: #f5e8cf;
+    border-radius: 0 20px 20px 0;
+}
+
+.textarea-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.textarea-wrapper textarea {
+    font-size: min(34px,6vw);
+    font-family: 'kiwi Maru';
+    color: #252c3f;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    border-bottom: solid 2px white;
+    border-radius: 20px 0 0 20px;
+    max-width: 60vw;
+    min-height: 40px;
+    min-width: 30vw;
+}
+
+button:hover{
+   transition: ease-out 0.2s;
+   box-shadow: 14px 14px 14px rgba(70, 16, 58, 0.2), -14px -14px 14px rgba(255,255,255, 0.3);
+   transform: scale(1.03);
+}
+
+button:active {
+   box-shadow: none;
+   transform: scale(0.96);
+   transition: ease-in .1s;
+   background: rgba(255,255,255,0.6);
+}
+
+.misskeyshare{
+    margin-top: 80px;
+    text-align: center;
+}
+.sharebtn {
+    position: relative;
+    border-radius: 900px;
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 1;
+    font-family: sans-serif;
+    font-weight: 700;
+    border: solid 3px #ffffff;
+}
+.sharebtn img {
+    margin: auto 0 auto 30px;
+    height: 80px;
+    width: 80px;
+    line-height: 1;
+}
+.sharebtn div {
+    color: #425a00;
+    font-family: 'Zen Maru Gothic';
+    height: fit-content;
+    line-height: 3;
+    margin-right: 30px;
+}
+
+.sharebtn:hover {
+   background: #d9eba9;
+   border: solid 3px #425a00;
+}
