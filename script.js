@@ -5,7 +5,7 @@ window.onload = (event) => {
   const textarea = document.querySelector("textarea");
   const share = document.querySelector(".sharebtn");
 
-  const thissiteURL = 'https://example.com';/*https://ikakonbu.github.io/naosuki-input/*/
+  const thissiteURL = 'https://ikakonbu.github.io/naosuki-input/';/*https://ikakonbu.github.io/naosuki-input/*/
   //各入力ボタンを押したらテキストを追加
   h1.forEach((node) => {
     node.addEventListener('click', function(){
